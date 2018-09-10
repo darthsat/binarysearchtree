@@ -1,13 +1,14 @@
 package com.darthsat.binarysearchtree;
 
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Queue;
 
 public class BinarySearchTree {
     Node root;
 
-    BinarySearchTree(int... nodeValues) {
-        for (int nodeValue : nodeValues) {
+    BinarySearchTree(ArrayList<Integer> nodeValues) {
+        for (Integer nodeValue : nodeValues) {
             add(nodeValue);
         }
     }
@@ -112,5 +113,6 @@ public class BinarySearchTree {
                 nodes.add(node.right);
             }
         }
+        System.out.println();
     }
 }
